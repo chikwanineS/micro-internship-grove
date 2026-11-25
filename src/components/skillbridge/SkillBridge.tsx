@@ -82,10 +82,10 @@ function Marketplace({ tasks, role, onAccept }: { tasks: Task[]; role: Role; onA
     `${t.title} ${t.company} ${t.stack.join(" ")}`.toLowerCase().includes(q.toLowerCase())), [tasks, skill, q]);
   return (
     <div className="space-y-6">
-      <section className="bg-hero rounded-3xl p-6 text-primary-foreground sm:p-8">
-        <p className="mb-2 text-xs font-semibold uppercase tracking-widest opacity-70">Micro-Task Marketplace</p>
+      <section className="bg-hero rounded-3xl p-6 text-hero-foreground sm:p-8">
+        <p className="mb-2 text-xs font-semibold uppercase tracking-widest opacity-90">Micro-Task Marketplace</p>
         <h1 className="max-w-2xl text-2xl font-bold leading-tight sm:text-3xl">Bridge the local experience gap.</h1>
-        <p className="mt-2 max-w-2xl opacity-80">Complete real micro-tasks from local businesses and build a verified portfolio.</p>
+        <p className="mt-2 max-w-2xl opacity-90">Complete real micro-tasks from local businesses and build a verified portfolio.</p>
       </section>
       <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
         <div className="flex flex-wrap gap-2">
@@ -132,7 +132,7 @@ function Workspace({ tasks, onSubmit, goMarket }: { tasks: Task[]; onSubmit: (t:
     <div className="grid gap-6 lg:grid-cols-3">
       <aside className={`${card} h-fit space-y-4`}>
         <div className="flex items-center gap-3">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-hero text-lg font-bold text-primary-foreground">AO</div>
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-hero text-lg font-bold text-hero-foreground">AO</div>
           <div><h2 className="font-semibold">Amina Ochieng</h2><p className="text-sm text-muted-foreground">PLP Software Engineering Track</p></div>
         </div>
         <div className="flex flex-wrap gap-1.5">{["Python", "MySQL", "Git"].map((s) => <span key={s} className="rounded-full bg-accent px-2.5 py-0.5 text-xs font-semibold text-accent-foreground">{s}</span>)}</div>
