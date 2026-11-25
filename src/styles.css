@@ -67,6 +67,7 @@
   --color-action: var(--action);
   --color-action-foreground: var(--action-foreground);
   --color-hero-foreground: var(--hero-foreground);
+  --color-logo-surface: var(--logo-surface);
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", ui-sans-serif, sans-serif;
   --color-sidebar: var(--sidebar);
@@ -101,6 +102,7 @@
   --action-foreground: oklch(0.99 0.012 85);
   --gradient-hero: linear-gradient(135deg, oklch(0.24 0.06 178) 0%, oklch(0.36 0.1 158) 55%, oklch(0.47 0.13 72) 100%);
   --hero-foreground: oklch(0.975 0.02 85);
+  --logo-surface: oklch(0.975 0.02 85);
   --destructive: oklch(0.5 0.19 20);
   --destructive-foreground: oklch(0.985 0.012 85);
   --border: oklch(0.877 0.022 80);
@@ -142,6 +144,7 @@
   --action-foreground: oklch(0.17 0.03 40);
   --gradient-hero: linear-gradient(135deg, oklch(0.2 0.05 178) 0%, oklch(0.32 0.09 160) 55%, oklch(0.44 0.12 70) 100%);
   --hero-foreground: oklch(0.97 0.022 85);
+  --logo-surface: oklch(0.97 0.022 85);
   --destructive: oklch(0.66 0.19 22);
   --destructive-foreground: oklch(0.16 0.03 30);
   --border: oklch(0.92 0.03 80 / 14%);

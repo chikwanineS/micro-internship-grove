@@ -1,7 +1,8 @@
 import { useMemo, useState } from "react";
 import { toast } from "sonner";
-import { BadgeCheck, Briefcase, Clock, Code2, GraduationCap, LayoutGrid, Plus, Search, ShieldCheck, Signal, Trophy, User, Building2, Globe2, Github, CheckCircle2 } from "lucide-react";
+import { BadgeCheck, Briefcase, Clock, GraduationCap, LayoutGrid, Plus, Search, ShieldCheck, Signal, Trophy, User, Building2, Globe2, Github, CheckCircle2 } from "lucide-react";
 import { initialTasks, SKILLS, talent, type Skill, type Task } from "./data";
+import logoMark from "@/assets/skillbridge-mark.png";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
 
 type Role = "student" | "partner";
@@ -42,7 +43,7 @@ export function SkillBridge() {
       <header className="sticky top-0 z-30 border-b border-border bg-card/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3">
           <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground"><Code2 className="h-5 w-5" /></div>
+            <img src={logoMark} width={36} height={36} loading="lazy" alt="SkillBridge logo" className="h-9 w-9 rounded-xl border border-border bg-logo-surface p-1.5 shadow-sm" />
             <span className="font-display text-xl font-bold">SkillBridge</span>
             <span className="hidden items-center gap-1 rounded-full bg-success/10 px-2.5 py-1 text-xs font-semibold text-success sm:inline-flex"><Globe2 className="h-3.5 w-3.5" />SDGs 8 • 10 • 17</span>
           </div>
